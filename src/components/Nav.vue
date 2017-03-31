@@ -7,18 +7,42 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Offense</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Defense</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Saves</a>
-          </li>
+          <router-link 
+            :to="{name: 'home'}" 
+            tag="li" 
+            class="nav-item" 
+            active-class="active" 
+            exact
+          >
+            <a class='nav-link'>Home</a>
+          </router-link>
+          <router-link 
+            :to="{name: 'offense'}" 
+            tag="li" 
+            class="nav-item" 
+            active-class="active" 
+            exact
+          >
+            <a class='nav-link'>Offense</a>
+          </router-link>
+          <router-link 
+            :to="{name: 'defense'}" 
+            tag="li" 
+            class="nav-item" 
+            active-class="active" 
+            exact
+          >
+            <a class='nav-link'>Defense</a>
+          </router-link>
+          <router-link 
+            :to="{name: 'saves'}" 
+            tag="li" 
+            class="nav-item" 
+            active-class="active" 
+            exact
+          >
+            <a class='nav-link'>Saves</a>
+          </router-link>
         </ul>
       </div>
     </nav>
