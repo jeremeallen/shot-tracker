@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class='col'>
-      <img src='/static/img/half_rink.png' class='img-fluid' />
+      <img src='/static/img/goalie.jpg' class='img-fluid' />
     </div>
   </div>
 </template>

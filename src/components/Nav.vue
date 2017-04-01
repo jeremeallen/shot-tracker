@@ -17,31 +17,22 @@
             <a class='nav-link'>Home</a>
           </router-link>
           <router-link 
-            :to="{name: 'offense'}" 
+            :to="{name: 'shots'}" 
             tag="li" 
             class="nav-item" 
             active-class="active" 
             exact
           >
-            <a class='nav-link'>Offense</a>
+            <a class='nav-link'>Shots</a>
           </router-link>
           <router-link 
-            :to="{name: 'defense'}" 
+            :to="{name: 'goalie'}" 
             tag="li" 
             class="nav-item" 
             active-class="active" 
             exact
           >
-            <a class='nav-link'>Defense</a>
-          </router-link>
-          <router-link 
-            :to="{name: 'saves'}" 
-            tag="li" 
-            class="nav-item" 
-            active-class="active" 
-            exact
-          >
-            <a class='nav-link'>Saves</a>
+            <a class='nav-link'>Goalie</a>
           </router-link>
         </ul>
       </div>

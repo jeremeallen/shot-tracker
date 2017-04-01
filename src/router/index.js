@@ -1,9 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Defense from '@/components/Defense';
 import Home from '@/components/Home';
 import Goalie from '@/components/Goalie';
-import Offense from '@/components/Offense';
+import Shots from '@/components/Shots';
 
 Vue.use(Router);
 
@@ -15,18 +14,13 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/offense',
-      name: 'offense',
-      component: Offense,
+      path: '/shots',
+      name: 'shots',
+      component: Shots,
     },
     {
-      path: '/defense',
-      name: 'defense',
-      component: Defense,
-    },
-    {
-      path: '/saves',
-      name: 'saves',
+      path: '/goalie',
+      name: 'goalie',
       component: Goalie,
     },
   ],
